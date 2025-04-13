@@ -1,10 +1,12 @@
 # Match members with jobs
 
-## Technical Task - Bright Network
+## Technical Challenge - Bright Network
 
 2025-04-13 - By Michael Doyle [email](mailto:mdoyle@mdoyle.org) | [linkedin](https://www.linkedin.com/in/mdoyle/)
 
 This is a simple TypeScript console application that loads JSON from the two url's provided and prints out members and the their job matches.
+
+the challenge is described [here](./challenge.md).
 
 these are the results I get when i run the program:
 
