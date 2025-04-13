@@ -32,3 +32,25 @@ I combined these functions to make a function that takes the two input arrays an
 finally there's a "main" program file [index.ts](./src/index.ts) which fetches the data, compares it and prints the results.
 
 there are jest tests fot the various components.
+
+these are the results i get
+
+```
+Member: Joe - I'm a designer from London, UK
+Matched Jobs:
+- UX Designer in London
+Member: Marta - I'm looking for an internship in London
+Matched Jobs:
+- Legal Internship in London
+- Sales Internship in London
+Member: Hassan - I'm looking for a design job
+Matched Jobs:
+- UX Designer in London
+Member: Grace - I'm looking for a job in marketing outside of London
+Matched Jobs:
+- Marketing Internship in York
+Member: Daisy - I'm a software developer currently in Edinburgh but looking to relocate to London
+Matched Jobs:
+- Software Developer in London
+
+```
