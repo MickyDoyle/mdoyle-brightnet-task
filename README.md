@@ -6,9 +6,9 @@
 
 This is a simple TypeScript console application that loads JSON from the two url's provided and prints out members and the their job matches.
 
-the challenge is described [here](./challenge.md).
+The challenge is described [here](./challenge.md).
 
-these are the results I get when i run the program:
+These are the results I get when I run the program:
 
 ```
 Member: Joe - I'm a designer from London, UK
@@ -32,7 +32,7 @@ Matched Jobs:
 
 ### Setup and run
 
-in a console type:
+In a console type:
 
 ```bash
 git clone https://github.com/MickyDoyle/mdoyle-brightnet-task
@@ -44,18 +44,18 @@ npm start
 
 ### About
 
-this was a fun little project; I enjoying thinking about processing natural text which i had not done in a work context before.
+This was a fun little project; I enjoying thinking about processing natural text which I had not done in a work context before.
 
 I decided not to spend too much time making a generic/perfect solution or in learning language processing tools.
 
-Instead i tried to implement just enough to pass this specific use-case and also to layout the logic so that better matching could be added later.
+Instead I tried to implement just enough to pass this specific use-case and also to layout the logic so that better matching could be added later.
 
-For location matching i used some regex's to look for the various phrases I saw in the provided data (see [compareLocation.ts](src/comparer/compareLocation.ts)).
+For location matching I used some regex's to look for the various phrases I saw in the provided data (see [compareLocation.ts](src/comparer/compareLocation.ts)).
 
-To match applicants with job-title i split each bio and title into words and then used a library i found online [porter-stemming](https://github.com/maxpatiiuk/porter-stemming) to "stem" the words e.g. `designer=>design`; then looked for 1-or-more matches between the two sets. (see [stemAndCompare.ts](./src/comparer/stemAndCompare.ts))
+To match applicants with job-title I split each bio and title into words and then used a library I found online [porter-stemming](https://github.com/maxpatiiuk/porter-stemming) to "stem" the words e.g. `designer=>design`; then looked for 1-or-more matches between the two sets. (see [stemAndCompare.ts](./src/comparer/stemAndCompare.ts))
 
 I combined these functions to make a function that takes the two input arrays and returns a list of matches (see [matchJobs.ts](./src/comparer/matchJobs.ts))
 
-finally there's a "main" program file [index.ts](./src/index.ts) which fetches the data, compares it and prints the results.
+Finally there's a "main" program file [index.ts](./src/index.ts) which fetches the data, compares it and prints the results.
 
-there are jest tests fot the various components.
+There are jest tests for the various components.
